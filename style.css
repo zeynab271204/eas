@@ -47,3 +47,18 @@ body {
     opacity: 1;
     text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
 }
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    display: inline-flex;
+    animation: marquee 25s linear infinite;
+    will-change: transform;
+}
+
+/* On s'assure que le menu ne soit pas caché par le bandeau en bas */
+main {
+    padding-bottom: 60px;
+}

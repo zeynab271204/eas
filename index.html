@@ -11,9 +11,32 @@
     <div class="text-center z-10">
         <p class="text-[#d4af37] text-xl tracking-[0.5em] mb-4 italic uppercase">The Ultimate Mixtape</p>
         <h1 class="text-8xl font-black text-white italic uppercase tracking-tighter mb-12">BALL <span class="text-[#d4af37]">&</span> FLOW</h1>
-        <button onclick="goToPage('menu.html')" class="px-12 py-5 border-2 border-[#d4af37] text-white font-bold uppercase tracking-widest hover:bg-[#d4af37] hover:text-black transition-all">
-            Start Game
-        </button>
+        <div class="mt-12 group cursor-pointer" onclick="goToPage('menu.html')">
+    <div class="relative bg-[#d4af37] text-black p-1 flex items-center skew-x-[-15deg] transition-transform group-hover:scale-105">
+        <!-- Partie Gauche (Main Ticket) -->
+        <div class="border-2 border-dashed border-black/30 px-8 py-4 flex flex-col items-center">
+            <p class="text-[10px] font-black tracking-widest uppercase opacity-70">Saison 2026</p>
+            <h2 class="text-3xl font-black italic uppercase">Start Game</h2>
+            <p class="text-[10px] font-black tracking-widest uppercase opacity-70 mt-1">Maestro MVP Edition</p>
+        </div>
+        
+        <!-- Partie Droite (Stub) -->
+        <div class="border-l-2 border-dashed border-black/30 px-6 py-4 flex flex-col justify-center bg-black/5 h-full">
+            <span class="text-[10px] font-black uppercase rotate-90 whitespace-nowrap tracking-tighter">ADMIT ONE</span>
+            <div class="mt-2 text-xl font-black italic">VIP</div>
+        </div>
+        
+        <!-- Encoches du ticket -->
+        <div class="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-[#030303] rounded-full"></div>
+        <div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-[#030303] rounded-full"></div>
+    </div>
+    
+    <!-- Détails sous le ticket -->
+    <div class="mt-4 flex justify-between text-[10px] text-[#d4af37] font-bold uppercase tracking-[0.3em] opacity-60">
+        <span>Section: Loge Royale</span>
+        <span>Siège: MVP Only</span>
+    </div>
+</div>
     </div>
     <script src="script.js"></script>
 </body>
